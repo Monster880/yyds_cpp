@@ -14,7 +14,7 @@ public:
         int index1 = 0, index2 = 0;
         while(true){
             if(index1 == m){
-                return nums2[index2 + k -1];
+                return nums2[index2 + k - 1];
             }
             if(index2 == n){
                 return nums1[index1 + k - 1];
@@ -30,7 +30,7 @@ public:
                 k -= newIndex1 - index1 + 1;
                 index1 = newIndex1 + 1;
             }else{
-                k -= newIndex2 -index2 + 1;
+                k -= newIndex2 - index2 + 1;
                 index2 = newIndex2 + 1;
             }
         }
